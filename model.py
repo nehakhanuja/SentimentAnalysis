@@ -6,7 +6,7 @@ import nltk
 
 from nltk.corpus.reader import reviews
 nltk.download('punkt',download_dir='\app\nltk_data\tokenizers'))
-nltk.download('stopwords',download_dir='C:\app\nltk_data\tokenizers'))
+nltk.download('stopwords',download_dir='\app\nltk_data\tokenizers'))
 nlp = spacy.load('en_core_web_sm')
 reviews = pd.read_csv('sample30.csv',sep=",")
 
