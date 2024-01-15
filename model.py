@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pickle
 import nltk
-from nltk.corpus.reader import reviews
+nltk.download('punkt', download_dir='/app/nltk_data/')
 
 app = Flask(__name__)
 valid_userid = ['00sab00','1234','zippy','zburt5','joshua','dorothy w','rebecca','walker557','samantha','raeanne','kimmie','cassie','moore222']
