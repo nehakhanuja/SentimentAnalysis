@@ -4,7 +4,9 @@ import pandas as pd
 import pickle
 import nltk
 from nltk.corpus.reader import reviews
-nltk.download('punkt','wordnet','stopwords', download_dir='/app/nltk_data/')
+nltk.download('punkt','wordnet','stopwords','omw-1.4', download_dir='/app/nltk_data/')
+nlp = spacy.load('en_core_web_sm')
+reviews = pd.read_csv('sample30.csv',sep=",")
 
 
 app = Flask(__name__)
