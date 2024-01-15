@@ -1,9 +1,9 @@
 from flask import Flask, jsonify, request, render_template
-import waitress
 import numpy as np
 import pandas as pd
 import pickle
 import nltk
+from nltk.corpus.reader import reviews
 
 app = Flask(__name__)
 valid_userid = ['00sab00','1234','zippy','zburt5','joshua','dorothy w','rebecca','walker557','samantha','raeanne','kimmie','cassie','moore222']
