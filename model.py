@@ -5,8 +5,13 @@ import pickle
 import nltk
 
 from nltk.corpus.reader import reviews
-nltk.download('punkt',download_dir='C:\app\nltk_data\'))
-nltk.download('stopwords',download_dir='C:\app\nltk_data\'))
+# Set NLTK data path to the local copy in your project
+nltk.data.path.append("C:/app/nltk_data")
+
+# Download 'punkt' and 'stopwords' data
+nltk.download('punkt', download_dir='C:/app/nltk_data/')
+nltk.download('stopwords', download_dir='C:/app/nltk_data/')
+
 nlp = spacy.load('en_core_web_sm')
 reviews = pd.read_csv('sample30.csv',sep=",")
 
