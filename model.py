@@ -5,8 +5,8 @@ import pickle
 import nltk
 
 from nltk.corpus.reader import reviews
-nltk.download('punkt','wordnet','stopwords','omw-1.4',download_dir='C:\Users\nehak\Desktop\SentimentAnalysis\nltk_data')
-nltk.data.path.append("/app/nltk_data")
+nltk.download('punkt', download_dir='C:\Users\nehak\Desktop\SentimentAnalysis\nltk_data')
+nltk.download('stopwords',download_dir='C:\Users\nehak\Desktop\SentimentAnalysis\nltk_data')
 nlp = spacy.load('en_core_web_sm')
 reviews = pd.read_csv('sample30.csv',sep=",")
 
@@ -85,6 +85,8 @@ def predict():
         return render_template('index.html')
     
 if __name__ == '__main__':
+    import warnings
+    warnings.warn("use 'python -m nltk', not 'python -m nltk.downloader'",DeprecationWarning)
     app.run(debug=True)
 
     #app.run(host='127.0.0.1', port=5000)
