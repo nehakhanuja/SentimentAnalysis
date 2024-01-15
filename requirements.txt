@@ -1,4 +1,4 @@
-Python                    3.8.5
+
 Flask                     3.0.0
 Jinja2                    >=3.1.2
 Pandas                    1.5.3
