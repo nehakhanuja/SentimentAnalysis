@@ -3,9 +3,10 @@ import numpy as np,string
 import pandas as pd
 import pickle
 import nltk
-nltk.data.path.append("/app/nltk_data")
+
 from nltk.corpus.reader import reviews
 nltk.download('punkt','wordnet','stopwords','omw-1.4')
+nltk.data.path.append("/app/nltk_data")
 nlp = spacy.load('en_core_web_sm')
 reviews = pd.read_csv('sample30.csv',sep=",")
 
