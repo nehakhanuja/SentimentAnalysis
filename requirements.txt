@@ -1,0 +1,12 @@
+Jinja2                    3.1.2
+Flask                     3.0.0
+Pandas                    1.5.3
+Numpy                     1.23.5
+Matplotlib
+scikit Learn              1.2.2
+Seaborn                   0.12.2
+nltk                      3.8.1  
+Pickleshare               0.7.5
+cloudpickle               2.2.1 
+imblearn                  0.10.1
+    
