@@ -1,8 +1,9 @@
 from flask import Flask, jsonify, request, render_template
-import numpy as np
+import numpy as np,string
 import pandas as pd
 import pickle
 import nltk
+from nltk.corpus.reader import reviews
 nltk.download('punkt','wordnet','stopwords', download_dir='/app/nltk_data/')
 
 
