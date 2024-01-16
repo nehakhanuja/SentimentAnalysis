@@ -4,6 +4,10 @@ import pandas as pd
 import pickle
 import spacy
 import nltk
+import os
+# Set NLTK data path
+nltk.data.path.append(os.path.join(os.getcwd(), 'nltk_data'))
+
 from nltk.corpus.reader import reviews
 
 
