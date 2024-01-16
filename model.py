@@ -5,21 +5,9 @@ import pickle
 import nltk
 import os
 from nltk.corpus.reader import reviews
-nltk_data_path = "C:/app/nltk_data"
-nltk.data.path.append(nltk_data_path)
-
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    os.system(f"python -m nltk.downloader -d {nltk_data_path} punkt")
-
-try:
-    nltk.data.find('corpora/stopwords')
-except LookupError:
-    os.system(f"python -m nltk.downloader -d {nltk_data_path} stopwords")
-
-
-nlp = spacy.load('en_core_web_sm')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.data.path.append("nltk_data")
 reviews = pd.read_csv('sample30.csv',sep=",")
 
 
